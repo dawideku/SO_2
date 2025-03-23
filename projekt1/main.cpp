@@ -1,6 +1,14 @@
-#include <iostream>
+#include "DiningPhilosophers.h"
+
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    int numPhilosophers;
+    cout << "Philosophers amount: ";
+    cin >> numPhilosophers;
+
+    DiningPhilosophers dp(numPhilosophers);
+    dp.start();
+
     return 0;
 }
